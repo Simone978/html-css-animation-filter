@@ -107,3 +107,16 @@
 .ex-4-square:hover {
   opacity: 0;
 }
+
+
+/* quadrato che ingrandisce e rimpicciolisce */
+
+.ex-5-square {
+  transition: transform 3s;
+}
+.ex-5-square:hover {
+  transform: scale(2);
+}
+.ex-5-square:active {
+  transform: scale(0.5);
+}
