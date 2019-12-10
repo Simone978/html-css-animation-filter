@@ -179,3 +179,24 @@
     transform: rotate(-360deg);
   }
 }
+
+
+/* icona caricamento hover */
+
+.ex-11-icon:hover{
+  animation-name: spinner-hover;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes spinner-hover {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(320deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
