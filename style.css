@@ -112,11 +112,18 @@
 /* quadrato che ingrandisce e rimpicciolisce */
 
 .ex-5-square {
-  transition: transform 3s;
+  transition: transform 1s;
 }
 .ex-5-square:hover {
   transform: scale(2);
 }
 .ex-5-square:active {
   transform: scale(0.5);
+}
+
+
+/* immagine bianco e nero in hover */
+
+.ex-6-img:hover{
+  filter: grayscale();
 }
