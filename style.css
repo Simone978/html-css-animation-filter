@@ -125,5 +125,15 @@
 /* immagine bianco e nero in hover */
 
 .ex-6-img:hover{
-  filter: grayscale();
+  filter: grayscale(.8);
+}
+
+
+/* immagine due effetti graduale */
+
+.ex-7-img{
+  transition: filter 3s;
+}
+.ex-7-img:hover{
+  filter:  grayscale(.9) hue-rotate(50deg);
 }
