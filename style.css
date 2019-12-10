@@ -245,8 +245,7 @@
   animation-name: white-space13-top;
   animation-duration: 2s;
   animation-timing-function: linear;
-  /* animation-direction: alternate; */
-  /* background: red; */
+
 }
 
 @keyframes white-space13-top {
