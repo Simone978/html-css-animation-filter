@@ -137,3 +137,14 @@
 .ex-7-img:hover{
   filter:  grayscale(.9) hue-rotate(50deg);
 }
+
+
+/* immagine due effetti graduale bordi arrotondati */
+
+.ex-8-img{
+  transition: filter 2s;
+}
+.ex-8-img:hover{
+  border-radius: 10px;
+  filter: hue-rotate(60deg) saturate(.9);
+}
