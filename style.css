@@ -142,23 +142,23 @@
 /* immagine due effetti graduale bordi arrotondati */
 
 .ex-8-img{
-  transition: filter 2s;
+  transition: filter 2s, border-radius 2s;
 }
 .ex-8-img:hover{
-  border-radius: 10px;
   filter: hue-rotate(60deg) saturate(.9);
+  border-radius: 10px;
 }
 
 
 /* immagine due effetti bordi arrotondati scale */
 
 .ex-9-img{
-  transition: filter 2s, transform 2s;
+  transition: filter 2s, transform 2s, border-radius 2s;
 }
 .ex-9-img:hover{
-  border-radius: 10px;
   filter: sepia(.7) saturate(.9);
-  transform: scale(1.5)
+  transform: scale(1.5);
+  border-radius: 10px;
 }
 
 
@@ -236,4 +236,77 @@
   100%{
     right: 20%;
   }
+}
+
+
+/* bottone spazio bianco giro completo */
+
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: white-space13-top;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+  /* background: red; */
+}
+
+@keyframes white-space13-top {
+  0%{
+    left: 10%;
+    top: -10px;
+  }
+  30%{
+    left: calc(100% - 30px);
+    top: -10px;
+  }
+  45%{
+    left: calc(100% - 30px);
+    top: 100%;
+  }
+  75%{
+    left: 0;
+    top: 100%;
+  }
+  90%{
+    left: -15px;
+    top: -10px;
+  }
+  100%{
+    left: 10%;
+    top: -10px;
+  }
+
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: white-space13-bottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes white-space13-bottom {
+  0%{
+    right: 10%;
+    bottom: -10px;
+  }
+  30%{
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  45%{
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+  75%{
+    right: 0;
+    bottom: 100%;
+  }
+  90%{
+    right: -15px;
+    bottom: -10px;
+  }
+  100%{
+    right: 10%;
+    bottom: -10px;
+  }
+
 }
