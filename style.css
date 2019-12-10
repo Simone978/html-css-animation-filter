@@ -90,3 +90,10 @@
 
 
 /* da quadrato a cerchio */
+
+.ex-3-square {
+  transition: border-radius 3s;
+}
+.ex-3-square:hover {
+  border-radius: 50%;
+}
