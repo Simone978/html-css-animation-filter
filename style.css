@@ -148,3 +148,15 @@
   border-radius: 10px;
   filter: hue-rotate(60deg) saturate(.9);
 }
+
+
+/* immagine due effetti bordi arrotondati scale */
+
+.ex-9-img{
+  transition: filter 2s, transform 2s;
+}
+.ex-9-img:hover{
+  border-radius: 10px;
+  filter: sepia(.7) saturate(.9);
+  transform: scale(1.5)
+}
