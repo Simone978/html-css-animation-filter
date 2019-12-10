@@ -160,3 +160,22 @@
   filter: sepia(.7) saturate(.9);
   transform: scale(1.5)
 }
+
+
+/* icona caricamento */
+
+.ex-10-icon{
+  animation-name: spinner;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
